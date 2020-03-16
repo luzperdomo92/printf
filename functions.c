@@ -28,17 +28,20 @@ int print_string(va_list ls)
 			return  (print_char_pointer(str));
 }
 /**
- * print_char_pointer - functions for beautifull code ;)
- *@string: is a ls of the list of arguments
+ * print_decimal - functions for beautifull code ;)
+ *@ls: is a ls of the list of arguments
  * Return: 1 for add
  */
-int print_char_pointer(char *string)
+int print_decimal(va_list ls)
 {
-	int i;
-
-	for (i = 0; string[i] != '\0'; i++)
-	{
-		_putchar(string[i]);
-	}
-	return (i + 1);
+	return (print_numbers(va_args(ls, int)));
+}
+/**
+ * print_integrer - functions for beautifull code ;)
+ *@ls: is a ls of the list of arguments
+ * Return: 1 for add
+ */
+int print_integrer(va_list ls)
+{
+	return (print_decimal(ls));
 }
