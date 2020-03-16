@@ -8,7 +8,7 @@
 int print_char(va_list ls)
 {
 	int character = va_arg(ls, int);
-		_puntchar(character);
+		_putchar(character);
 	return (1);
 }
 /**
@@ -18,7 +18,6 @@ int print_char(va_list ls)
  */
 int print_string(va_list ls)
 {
-	int i;
 	char *str = va_arg(ls, char*);
 
 	if (str == NULL)
