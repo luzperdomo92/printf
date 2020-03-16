@@ -11,10 +11,12 @@
 typedef struct print_value
 {
 	char input_type;
-	int (*f)(va_list);
+	int (*function)(va_list);
 } print_value_t;
 
+int _putchar(char c);
 int _printf(const char *format, ...);
+int call_print_function(char c, va_list list_args)
 int print_char(va_list);
 int print_string(va_list);
 int print_char_pointer(char *string);

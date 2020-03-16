@@ -18,7 +18,7 @@ int call_print_function(char c, va_list list_args)
 	{
 		if (operations[op_i].input_type == c)
 		{
-			return (operator[op_i]->function(list_args));
+			return (operations[op_i]->function(list_args));
 		}
 	}
 	return (-1);
