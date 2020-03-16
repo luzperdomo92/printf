@@ -44,13 +44,3 @@ int print_integrer(va_list ls)
 {
 	return (print_decimal(ls));
 }
-/**
- * print_module - functions for beautifull code ;
- *@ls: is a ls of the list of arguments
- * Return: value of function
- */
-int print_module(va_list ls)
-{
-	return (_putchar('%'));
-}
-
