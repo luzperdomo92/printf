@@ -16,7 +16,7 @@ typedef struct print_value
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int call_print_function(char c, va_list list_args)
+int call_print_function(char, va_list);
 int print_char(va_list);
 int print_string(va_list);
 int print_char_pointer(char *string);

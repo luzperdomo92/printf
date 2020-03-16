@@ -25,7 +25,8 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			char_replaced = call_print_funtion(format[format_i + 1], my_list)
+			chars_replaced = call_print_function(format[format_i + 1], my_list);
+
 				if (chars_replaced != -1)
 				{
 					_putchar(format[format_i]);
