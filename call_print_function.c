@@ -11,11 +11,15 @@ int call_print_function(char c, va_list list_args)
 		{'c', print_char},
 		{'s', print_string},
 		{'d', print_decimal},
-		{'i', print_integrer},
-		{'%', print_module}
+		{'i', print_integrer}
 	};
 
 	int op_i;
+
+	if (c == '%')
+	{
+		return (_putchar('%'));
+	}
 
 	for (op_i = 0; op_i < 4; op_i++)
 	{
