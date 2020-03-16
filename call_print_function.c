@@ -16,6 +16,11 @@ int call_print_function(char c, va_list list_args)
 
 	int op_i;
 
+	if (c == '%')
+	{
+		return (_putchar('%'));
+	}
+
 	for (op_i = 0; op_i < 4; op_i++)
 	{
 		if (operations[op_i].input_type == c)

@@ -3,7 +3,7 @@
 /**
  * print_char - print a only characters
  *@ls: is a list of arguments
- * Return: 1 for add
+ * Return: value of variable character
  */
 int print_char(va_list ls)
 {
@@ -14,7 +14,7 @@ int print_char(va_list ls)
 /**
  * print_string - print a sentence characters
  *@ls: is a list of arguments
- * Return: 1 for add or 0 is void
+ * Return: value of function print char pointer.
  */
 int print_string(va_list ls)
 {
@@ -29,7 +29,7 @@ int print_string(va_list ls)
 /**
  * print_decimal - functions for beautifull code ;)
  *@ls: is a ls of the list of arguments
- * Return: 1 for add
+ * Return: value of function.
  */
 int print_decimal(va_list ls)
 {
@@ -38,7 +38,7 @@ int print_decimal(va_list ls)
 /**
  * print_integrer - functions for beautifull code ;)
  *@ls: is a ls of the list of arguments
- * Return: 1 for add
+ * Return: value of function.
  */
 int print_integrer(va_list ls)
 {
