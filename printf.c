@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 
 	va_start(my_list, format);
 
-	if (format != NULL)
+	if (format == NULL)
 		return (0);
 
 	for (format_i = 0; format[format_i] != '\0'; format_i++)
@@ -27,7 +27,7 @@ int _printf(const char *format, ...)
 		{
 			chars_replaced = call_print_function(format[format_i + 1], my_list);
 
-				if (chars_replaced != -1)
+				if (chars_replaced == -1)
 				{
 					_putchar(format[format_i]);
 					sum++;
