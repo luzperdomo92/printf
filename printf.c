@@ -14,14 +14,13 @@ int _printf(const char *format, ...)
 	va_start(my_list, format);
 
 	if (format == NULL)
-		return (0);
+		return (-1);
 
 	for (format_i = 0; format[format_i] != '\0'; format_i++)
 	{
 		if (format[format_i] != '%')
 		{
-			_putchar(format[format_i]);
-			sum++;
+			sum += _putchar(format[format_i]);
 		}
 		else
 		{
@@ -29,8 +28,7 @@ int _printf(const char *format, ...)
 
 				if (chars_replaced == -1)
 				{
-					_putchar(format[format_i]);
-					sum++;
+					return (chars_replaced);
 				}
 				else
 				{
