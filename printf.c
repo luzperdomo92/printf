@@ -20,7 +20,6 @@ int _printf(const char *format, ...)
 	{
 		if (format[format_i] != '%')
 		{
-			_putchar(format[format_i]);
 			sum += _putchar(format[format_i]);
 		}
 		else
@@ -29,7 +28,6 @@ int _printf(const char *format, ...)
 
 				if (chars_replaced == -1)
 				{
-					_putchar(format[format_i]);
 					sum += _putchar(format[format_i]);
 				}
 				else
