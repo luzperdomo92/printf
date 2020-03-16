@@ -28,5 +28,5 @@ int call_print_function(char c, va_list list_args)
 			return (operations[op_i].function(list_args));
 		}
 	}
-	return (-1);
+	return (_putchar('%') + _putchar(c));
 }
