@@ -7,10 +7,11 @@
 int print_char_pointer(char *string)
 {
 	int i;
+	int count = 0;
 
 	for (i = 0; string[i] != '\0'; i++)
 	{
-		_putchar(string[i]);
+		count += _putchar(string[i]);
 	}
 	return (i + 1);
 }

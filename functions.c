@@ -8,9 +8,7 @@
 int print_char(va_list ls)
 {
 	int character = va_arg(ls, int);
-	
-		_putchar(character);
-	return (1);
+	return (_putchar(character));
 }
 /**
  * print_string - print a sentence characters

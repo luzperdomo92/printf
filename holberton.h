@@ -6,7 +6,7 @@
 /**
  * struct print_value - print_value
  * @input_type: the operator
- * @f: The function associated
+ * @function: The function associated
  */
 typedef struct print_value
 {
