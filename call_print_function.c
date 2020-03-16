@@ -9,16 +9,18 @@ int call_print_function(char c, va_list list_args)
 {
 	print_value_t operations[] = {
 		{'c', print_char},
-		{'s', print_string}
+		{'s', print_string},
+		{'d', print_decimal},
+		{'i', print_integrer}
 	};
 
 	int op_i;
 
-	for (op_i = 0; op_i < 2; op_i++)
+	for (op_i = 0; op_i < 4; op_i++)
 	{
 		if (operations[op_i].input_type == c)
 		{
-			return (operations[op_i]->function(list_args));
+			return (operations[op_i].function(list_args));
 		}
 	}
 	return (-1);
