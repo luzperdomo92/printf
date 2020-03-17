@@ -1,0 +1,28 @@
+				User Commands
+
+NAME
+	_printf - format and print data.
+
+SYNOPSIS
+	_printf(writing string of character and arguements)
+
+DESCRIPTION
+	The format constant string provides a description of the output,
+	with escape character "%", to specify the type of output that the
+	function should produce.
+	FORMAT controls the output as in C printf.  Interpreted sequences are:
+
+	%s  string of char.
+
+	%d signed 10 base integer.
+
+	%c only character.
+
+AUTHORS
+	Written by Jhonathan Angarita and Luz Perdomo.
+
+REPORTING BUGS
+	   Report printf bugs to <1538@holbertonschool.com>
+
+SEE ALSO
+    Full documentation at: <https://es.wikipedia.org/wiki/Printf>
