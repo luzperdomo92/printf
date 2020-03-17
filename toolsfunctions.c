@@ -20,7 +20,6 @@ int print_char_pointer(char *string)
  *@a: is a ls of the list of arguments
  * Return: 1 for add
  */
-
 int print_numbers(int a)
 {
 
@@ -43,5 +42,29 @@ int print_numbers(int a)
 	    count += _putchar(a + '0');
 	}
 
+	return (count);
+}
+/**
+ * print_numbers_binary - functions function converter decimal to binary
+ *@a: is a ls of the list of arguments
+ * Return: cant of numbers binary
+ */
+int print_numbers_binary(int a)
+{
+	int count  = 0;
+
+	if (a <= 0)
+	{
+		_putchar('0');
+	}
+	if (a / 2)
+	{
+		count += print_numbers(a / 2);
+		count += _putchar((a % 2) + '0');
+	}
+	else
+	{
+		count += _putchar(a + '0');
+	}
 	return (count);
 }

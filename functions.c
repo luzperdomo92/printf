@@ -36,11 +36,20 @@ int print_decimal(va_list ls)
 	return (print_numbers(va_arg(ls, int)));
 }
 /**
- * print_integrer - functions for beautifull code ;)
+ * print_integrer - functions print interger.
  *@ls: is a ls of the list of arguments
  * Return: value of function.
  */
 int print_integrer(va_list ls)
 {
 	return (print_decimal(ls));
+}
+/**
+ * print_binary - function converter decimal to binary
+ *@ls: is a ls of the list of arguments
+ * Return: value of function.
+ */
+int print_binary(va_list ls)
+{
+	return (print_numbers_binary(va_arg(ls, int)));
 }
