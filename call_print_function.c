@@ -16,6 +16,11 @@ int call_print_function(char c, va_list list_args)
 
 	int op_i;
 
+	if (c == '\0')
+	{
+		return (-1);
+	}
+
 	if (c == '%')
 	{
 		return (_putchar('%'));

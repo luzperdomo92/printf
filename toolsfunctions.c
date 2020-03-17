@@ -13,7 +13,7 @@ int print_char_pointer(char *string)
 	{
 		count += _putchar(string[i]);
 	}
-	return (i + 1);
+	return (count);
 }
 /**
  * print_numbers - functions for beautifull code ;)
