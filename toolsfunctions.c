@@ -13,7 +13,7 @@ int print_char_pointer(char *string)
 	{
 		count += _putchar(string[i]);
 	}
-	return (i + 1);
+	return (count);
 }
 /**
  * print_numbers - functions for beautifull code ;)
@@ -28,21 +28,20 @@ int print_numbers(int a)
 
 	if (a < 0)
 	{
-		putchar('-');
+		count += _putchar('-');
 		a = -a;
-		count++;
 	}
+
 	if (a / 10)
 	{
-		count = print_numbers(a / 10);
+		count += print_numbers(a / 10);
 
-		putchar((a % 10) + '0');
+		count += _putchar((a % 10) + '0');
 	}
 	else
 	{
-	    count++;
-	    putchar(a + '0');
+	    count += _putchar(a + '0');
 	}
 
-	return (count + 1);
+	return (count);
 }
