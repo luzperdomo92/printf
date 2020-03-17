@@ -55,7 +55,7 @@ int print_numbers_binary(int a)
 
 	if (a <= 0)
 	{
-		_putchar('0');
+		count += _putchar('0');
 	}
 	if (a / 2)
 	{
