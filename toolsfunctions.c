@@ -59,7 +59,7 @@ int print_numbers_binary(int a)
 	}
 	if (a / 2)
 	{
-		count += print_numbers(a / 2);
+		count += print_numbers_binary(a / 2);
 		count += _putchar((a % 2) + '0');
 	}
 	else
