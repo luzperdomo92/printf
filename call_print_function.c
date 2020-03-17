@@ -11,7 +11,8 @@ int call_print_function(char c, va_list list_args)
 		{'c', print_char},
 		{'s', print_string},
 		{'d', print_decimal},
-		{'i', print_integrer}
+		{'i', print_integrer},
+		{'b', print_binary}
 	};
 
 	int op_i;
