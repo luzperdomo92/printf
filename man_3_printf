@@ -18,6 +18,8 @@ DESCRIPTION
 
 	%c only character.
 
+	%i signed integer.
+
 AUTHORS
 	Written by Jhonathan Angarita and Luz Perdomo.
 
