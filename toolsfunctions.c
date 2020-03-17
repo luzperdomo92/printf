@@ -53,7 +53,7 @@ int print_numbers_binary(int a)
 {
 	int count  = 0;
 
-	if (a <= 0)
+	if (a < 0)
 	{
 		count += _putchar('0');
 	}
