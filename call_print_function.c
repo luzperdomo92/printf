@@ -37,6 +37,6 @@ int call_print_function(char c, va_list list_args)
 			return (operations[op_i].function(list_args));
 		}
 	}
-	va_end(list_args);
+
 	return (_putchar('%') + _putchar(c));
 }
