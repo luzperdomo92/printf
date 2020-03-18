@@ -89,7 +89,7 @@ int print_numbers_octal(int a)
 	}
 	if (a / 8)
 	{
-		count += print_numbers_binary(a / 8);
+		count += print_numbers_octal(a / 8);
 		count += _putchar((a % 8) + '0');
 	}
 	else
@@ -106,22 +106,16 @@ int print_numbers_octal(int a)
 int print_numbers_unsig(int a)
 {
 	int count  = 0;
+	long int b;
 
-	if (a <= 0)
+	if (a < 0)
 	{
-		a = -a;
+		count += _putchar('-');
+		b = -a;
+		if (a == INT_MIN)
+		{
+			b = (long int)1 + INT_MAX;
+		}
 	}
-
-	if (a / 10)
-	{
-		count += print_numbers(a / 10);
-
-		count += _putchar((a % 10) + '0');
-	}
-	else
-	{
-	    count += _putchar(a + '0');
-	}
-
-	return (count);
+	return print_numbers(b);
 }
