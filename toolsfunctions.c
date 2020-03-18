@@ -105,13 +105,11 @@ int print_numbers_octal(int a)
  */
 int print_numbers_unsig(int a)
 {
-	int count  = 0;
 	long int b;
 
 	if (a < 0)
 	{
-		count += _putchar('-');
-		b = -a;
+       		b = -a;
 		if (a == INT_MIN)
 		{
 			b = (long int)1 + INT_MAX;
