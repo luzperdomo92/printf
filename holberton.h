@@ -20,7 +20,7 @@ int call_print_function(char, va_list);
 int print_char(va_list);
 int print_string(va_list);
 int print_char_pointer(char *string);
-int print_numbers(int a);
+int print_numbers(long int a);
 int print_numbers_binary(int a);
 int print_integrer(va_list ls);
 int print_decimal(va_list ls);

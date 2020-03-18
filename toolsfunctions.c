@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <limits.h>
 /**
  * print_char_pointer - functions for beautifull code ;)
  *@string: is a ls of the list of arguments
@@ -17,18 +18,22 @@ int print_char_pointer(char *string)
 }
 /**
  * print_numbers - functions for beautifull code ;)
- *@a: is a ls of the list of arguments
+ *@int_a: is a ls of the list of arguments
  * Return: 1 for add
  */
-int print_numbers(int a)
+int print_numbers(long int int_a)
 {
-
 	int count  = 0;
+	long int a = int_a;
 
-	if (a < 0)
+	if (int_a < 0)
 	{
 		count += _putchar('-');
-		a = -a;
+		a = -int_a;
+		if (int_a == INT_MIN)
+		{
+			a = (long int)1 + INT_MAX;
+		}
 	}
 
 	if (a / 10)
