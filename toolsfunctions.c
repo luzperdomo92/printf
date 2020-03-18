@@ -56,7 +56,7 @@ int print_numbers_binary(int a)
 	if (a <= 0)
 	{
 		count += _putchar('0');
-		return(count);
+		return (count);
 	}
 	if (a / 2)
 	{
@@ -67,5 +67,57 @@ int print_numbers_binary(int a)
 	{
 		count += _putchar(a + '0');
 	}
+	return (count);
+}
+/**
+ * print_numbers_octal - functions function converter decimal to octal base
+ *@a: is a ls of the list of arguments
+ * Return: cant of numbers binary
+ */
+int print_numbers_octal(int a)
+{
+	int count  = 0;
+
+	if (a <= 0)
+	{
+		count += _putchar('0');
+		return (count);
+	}
+	if (a / 8)
+	{
+		count += print_numbers_binary(a / 8);
+		count += _putchar((a % 8) + '0');
+	}
+	else
+	{
+		count += _putchar(a + '0');
+	}
+	return (count);
+}
+/**
+ * print_numbers_unsig - functions only positive
+ *@a: is a ls of the list of arguments
+ * Return: 1 for add
+ */
+int print_numbers_unsig(int a)
+{
+	int count  = 0;
+
+	if (a <= 0)
+	{
+		a = -a;
+	}
+
+	if (a / 10)
+	{
+		count += print_numbers(a / 10);
+
+		count += _putchar((a % 10) + '0');
+	}
+	else
+	{
+	    count += _putchar(a + '0');
+	}
+
 	return (count);
 }

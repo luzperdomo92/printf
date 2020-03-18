@@ -12,7 +12,9 @@ int call_print_function(char c, va_list list_args)
 		{'s', print_string},
 		{'d', print_decimal},
 		{'i', print_integrer},
-		{'b', print_binary}
+		{'b', print_binary},
+		{'o', print_octal},
+		{'u', print_unsig}
 	};
 
 	int op_i;
@@ -27,7 +29,7 @@ int call_print_function(char c, va_list list_args)
 		return (_putchar('%'));
 	}
 
-	for (op_i = 0; op_i < 5; op_i++)
+	for (op_i = 0; op_i < 7; op_i++)
 	{
 		if (operations[op_i].input_type == c)
 		{

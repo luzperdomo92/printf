@@ -20,6 +20,12 @@ DESCRIPTION
 
 	%i signed integer.
 
+	%b for print numbers binary.
+
+	%o for print numbers base 8.
+
+	%u integer only positive.
+
 AUTHORS
 	Written by Jhonathan Angarita and Luz Perdomo.
 

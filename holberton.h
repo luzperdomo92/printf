@@ -25,4 +25,8 @@ int print_numbers_binary(int a);
 int print_integrer(va_list ls);
 int print_decimal(va_list ls);
 int print_binary(va_list ls);
+int print_numbers_octal(int a);
+int print_octal(va_list ls);
+int print_numbers_unsig(int a);
+int print_unsig(va_list ls);
 #endif
