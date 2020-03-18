@@ -30,7 +30,10 @@ int print_numbers(int a)
 		count += _putchar('-');
 		a = -a;
 	}
-
+	if (a == 0)
+	{
+		count += _putchar('0');
+	}
 	if (a / 10)
 	{
 		count += print_numbers(a / 10);
