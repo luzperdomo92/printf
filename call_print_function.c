@@ -18,6 +18,7 @@ int call_print_function(char c, va_list list_args)
 	};
 
 	int op_i;
+	int count;
 
 	if (c == '\0')
 	{
@@ -33,8 +34,12 @@ int call_print_function(char c, va_list list_args)
 	{
 		if (operations[op_i].input_type == c)
 		{
+			count = (operations[op_i].function(list_args));
 
-			return (operations[op_i].function(list_args));
+			if (count >= 0)
+			{
+				return(count);
+			}
 		}
 	}
 
