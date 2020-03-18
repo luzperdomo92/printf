@@ -9,6 +9,7 @@ int print_char(va_list ls)
 {
 	int character = va_arg(ls, int);
 
+	va_end(ls);
 	return (_putchar(character));
 }
 /**
@@ -24,6 +25,7 @@ int print_string(va_list ls)
 	{
 		return (print_char_pointer("(null)"));
 	}
+	va_end(ls);
 	return  (print_char_pointer(str));
 }
 /**
@@ -34,6 +36,7 @@ int print_string(va_list ls)
 int print_decimal(va_list ls)
 {
 	return (print_numbers(va_arg(ls, int)));
+	va_end(ls);
 }
 /**
  * print_integrer - functions print interger.
@@ -43,6 +46,7 @@ int print_decimal(va_list ls)
 int print_integrer(va_list ls)
 {
 	return (print_decimal(ls));
+	va_end(ls);
 }
 /**
  * print_binary - function converter decimal to binary
@@ -52,4 +56,5 @@ int print_integrer(va_list ls)
 int print_binary(va_list ls)
 {
 	return (print_numbers_binary(va_arg(ls, int)));
+	va_end(ls);
 }
