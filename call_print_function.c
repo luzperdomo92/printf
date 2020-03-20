@@ -38,7 +38,7 @@ int call_print_function(char c, va_list list_args)
 
 			if (count >= 0)
 			{
-				return(count);
+				return (count);
 			}
 		}
 	}

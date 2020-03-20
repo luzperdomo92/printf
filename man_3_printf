@@ -1,4 +1,4 @@
-				User Commands
+_PRINTF(3)			User Commands		_PRINTF(3)
 
 NAME
 	_printf - format and print data.
@@ -13,19 +13,36 @@ DESCRIPTION
 	FORMAT controls the output as in C printf.  Interpreted sequences are:
 
 	%s  string of char.
+example	    abcd
 
 	%d signed 10 base integer.
+example    0 1 -2 3
 
 	%c only character.
+example    a
 
 	%i signed integer.
+example    -5 8 9 -1
 
 	%b for print numbers binary.
+example 4(decimal) = 100
 
 	%o for print numbers base 8.
+exmaple 13(decimal) = 15
 
 	%u integer only positive.
+exmaple	    1 2 3 4
 
+USO OF _PRINTF
+
+    #include "holberton.h"
+    	     int main(void)
+    	     {
+    	     _printf("%b\n", 98);
+   	      return (0);
+   	       }
+
+       output:	1100010
 AUTHORS
 	Written by Jhonathan Angarita and Luz Perdomo.
 
@@ -34,3 +51,6 @@ REPORTING BUGS
 
 SEE ALSO
     Full documentation at: <https://es.wikipedia.org/wiki/Printf>
+    	 	       	   <http://man7.org/linux/man-pages/man1/printf.1.html>
+
+    	 	       	   2020-03-20				_PRINTF(3)

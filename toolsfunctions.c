@@ -32,7 +32,7 @@ int print_numbers(long int int_a)
 		a = -int_a;
 		if (int_a == INT_MIN)
 		{
-			a = (long int)1 + INT_MAX;
+			a = ((long int) 1) + INT_MAX;
 		}
 	}
 
@@ -109,11 +109,11 @@ int print_numbers_unsig(int a)
 
 	if (a < 0)
 	{
-       		b = -a;
+	b = -a;
 		if (a == INT_MIN)
 		{
-			b = (long int)1 + INT_MAX;
+			b = ((long int) 1) + INT_MAX;
 		}
 	}
-	return print_numbers(b);
+	return (print_numbers(b));
 }
