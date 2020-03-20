@@ -22,6 +22,18 @@ With two formating
 
 (the "\n" is for jump line.)
 
+EXAMPLE
+	#include <stdio.h>
+
+	int main()
+	{
+    	_printf("Hello World!!");
+
+    	return 0;
+	}
+
+output:		Hello World!!
+
 AUTHORS
 	Jhonathan Angarita.
 	luz Perdomo.
